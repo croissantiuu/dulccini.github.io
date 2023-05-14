@@ -222,5 +222,66 @@ body {
     0px;
 }
 }
-
-
+#form-box{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background:rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  width: 70vmax;
+  height: 70vh;
+}
+#order-now h2{
+  justify-self: center;
+}
+#sample-box{
+  background-color: tomato;
+  animation: image-transition-2 25s infinite; /* Duración de la transición y repetición infinita */
+  height: auto;
+  width: 70vmax;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+#contact-box h3{
+  font-family: "my-font", sans-serif;
+  font-size: 3.5em;
+}
+#contact-box h3:nth-child(4){
+  padding-bottom: 1.2em;
+  border-bottom: 1px black solid;
+}
+#contact-box img{
+  margin-bottom: 1.2em;
+}
+#contact-box p{
+  font-size: 1.5em;
+  font-family: "my-font", sans-serif;
+}
+#contact-box{
+  padding: 3.5em;
+}
+@keyframes image-transition-2 {
+  0% {
+    background-image: url('../images/dulccini13.jpeg');
+  }
+  33% {
+    background-image: url('../images/dulccini9.jpeg');
+  }
+  66% {
+    background-image: url('../images/dulccini2.jpeg');
+  }
+  100% {
+    background-image: url('../images/dulccini13.jpeg');/* Vuelve a la primera imagen al final */
+  }
+}
+#about-us{
+  margin-top: 100px;
+}
+#dulccini-footer{
+  color: white !important;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.15);
+}
