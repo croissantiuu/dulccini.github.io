@@ -16,6 +16,10 @@ body {
   font-family: 'dulccini-font'; 
   src: url('/fonts/Lobster.otf') format('opentype'); 
 }
+@font-face {
+  font-family: 'my-font'; 
+  src: url('/fonts/Pacifico.ttf') format('opentype'); 
+}
 
 #sct-navigation {
     position: absolute;
@@ -34,6 +38,10 @@ body {
 }
 #navigation-bar{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+#sct-nav-box{
+  display: flex;
+  flex-direction: row;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
@@ -123,5 +131,96 @@ body {
   justify-content: center;
 }
 
+#background-images-box{
+  
+}
+
+#background-images {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  animation: image-transition 25s infinite; /* Duración de la transición y repetición infinita */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: grid;
+  justify-content: center;
+}
+
+@keyframes image-transition {
+  0% {
+    background-image: url('/images/dulccini15.jpeg');
+  }
+  33% {
+    background-image: url('/images/dulccini8.jpeg');
+  }
+  66% {
+    background-image: url('/images/dulccini5.jpeg');
+  }
+  100% {
+    background-image: url('/images/dulccini15.jpeg');/* Vuelve a la primera imagen al final */
+  }
+}
+
+
+#actions-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+#actions-menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 50px;
+}
+
+#actions-menu li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "my-font", sans-serif;
+  font-size: 2.5em;
+  color: white;
+  transition: color 0.3s ease; /* Agregar transición al cambio de color */
+}
+#actions-menu li a:hover {
+  color: rgb(222, 57, 255) !important;
+}
+#actions-menu li img {
+  width: 50px;
+  margin-bottom: 5px;
+}
+#logo-box{
+  height: 200px;
+  background-color: transparent;
+}
+#logo{
+  justify-self: center;
+}
+#glass-box{
+  margin-top: 50px;
+  width: 80vmax;
+  height: 80vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background:rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  display: grid;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+  #actions-menu li a{
+    font-size: 2em;
+  }
+  #actions-menu li img{
+    width: 50px;
+    margin-right: 1
+    0px;
+}
+}
 
 
