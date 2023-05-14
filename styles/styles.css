@@ -14,11 +14,11 @@ body {
 
 @font-face {
   font-family: 'dulccini-font'; 
-  src: url('/fonts/Lobster.otf') format('opentype'); 
+  src: url('../fonts/Lobster.otf') format('opentype'); 
 }
 @font-face {
   font-family: 'my-font'; 
-  src: url('/fonts/Pacifico.ttf') format('opentype'); 
+  src: url('../fonts/Pacifico.ttf') format('opentype'); 
 }
 
 #sct-navigation {
@@ -148,16 +148,16 @@ body {
 
 @keyframes image-transition {
   0% {
-    background-image: url('/images/dulccini15.jpeg');
+    background-image: url('../images/dulccini15.jpeg');
   }
   33% {
-    background-image: url('/images/dulccini8.jpeg');
+    background-image: url('../images/dulccini8.jpeg');
   }
   66% {
-    background-image: url('/images/dulccini5.jpeg');
+    background-image: url('../images/dulccini5.jpeg');
   }
   100% {
-    background-image: url('/images/dulccini15.jpeg');/* Vuelve a la primera imagen al final */
+    background-image: url('../images/dulccini15.jpeg');/* Vuelve a la primera imagen al final */
   }
 }
 
