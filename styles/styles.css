@@ -11,6 +11,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+@font-face {
+  font-family: 'dulccini-font'; 
+  src: url('/fonts/Lobster.otf') format('opentype'); 
+}
+
 #sct-navigation {
     position: absolute;
     background-image: linear-gradient(to bottom, #cd9cf2 0%, #f6f3ff 100%);
@@ -33,8 +39,8 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 .myfont {
-  font-family: "Pacifico", cursive;
-  font-size: 2em !important;
+  font-family: "dulccini-font", sans-serif;
+  font-size: 3em !important;
 }
 .sct-link{
     text-decoration: none;
@@ -51,7 +57,7 @@ body {
 .container{
   width: 90%;
   padding: 10px 40px;
-  background-color: tomato;
+  background-color: transparent;
 }
 .container .swiper-container{
   width: 100%;
@@ -64,7 +70,8 @@ body {
   background: #fff;
   border-radius: 15px;
   text-align: start;
-  box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+  height: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
  
 }
 .container .swiper-slide img{
@@ -78,6 +85,7 @@ body {
 }
 .container .swiper-slide .card-description{
     padding:1rem 1rem;
+    height: 100%;
 }
 .container .swiper-slide .card-title,.container .swiper-slide .card-text{
    margin-bottom: .5rem;
@@ -92,10 +100,28 @@ body {
 }
 .swiper-button-next{
     right: 26px !important;
-    top: 800px;
+    top: 1050px;
 }
 .swiper-button-prev{
     left: 26px !important;
-    top: 800px;
+    top: 1050px;
 
 }
+.prod-title{
+  text-align: center;
+  padding: 25px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  font-family: "dulccini-font", sans-serif;
+  font-size: 2.5em;
+  border-bottom: 1px black solid;
+  width: 600px;
+}
+.prod-title-box{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
