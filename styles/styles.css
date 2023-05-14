@@ -148,7 +148,7 @@ body {
 
 @keyframes image-transition {
   0% {
-    background-image: url('images/dulccini15.jpeg');
+    background-image: url('../images/dulccini15.jpeg');
   }
   33% {
     background-image: url('../images/dulccini8.jpeg');
